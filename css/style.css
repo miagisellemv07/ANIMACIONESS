@@ -23,6 +23,43 @@ transform: rotate(135deg);
 
 .dk{
 position:absolute;
-top:190px;
+top:250px;
 left: 200px;
+animation-name: saltos;
+animation-duration:10s;
+animation-iteration-count:infinite;
+}
+.giroBarril{
+  animation-name: rotarBarril;
+  animation-duration: 3s;
+  animation-iteration-count:infinite;
+}
+@keyframes rotarBarril {
+  from{
+    transform: rotate(-80deg);
+  }
+  to{
+    transform: rotate(80deg);
+  }
+}
+@keyframes saltos{
+  0%{
+    top: -95px;
+    
+  }
+  30%{
+    top: -95px;
+    left:300px;
+  }
+  50%{
+    top:250px;
+  }
+  70%{
+    top:500px;
+    left:800px;
+}
+  
+  100%{
+    top:490px;
+  }
 }
