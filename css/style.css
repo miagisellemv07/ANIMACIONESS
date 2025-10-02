@@ -22,12 +22,12 @@ transform: rotate(135deg);
 }
 
 .dk{
-position:absolute;
-top:250px;
-left: 200px;
-animation-name: saltos;
-animation-duration:10s;
-animation-iteration-count:infinite;
+ position: absolute;
+  top: 250px;
+  left: 200px;
+  animation-name: saltos;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
 }
 .giroBarril{
   animation-name: rotarBarril;
@@ -42,24 +42,38 @@ animation-iteration-count:infinite;
     transform: rotate(80deg);
   }
 }
-@keyframes saltos{
-  0%{
+@keyframes saltos {
+  0% {
     top: -95px;
-    
+    left: 100px;
+       transform: rotate(0deg);
+        opacity: 1;
   }
-  30%{
-    top: -95px;
-    left:300px;
+
+  30% {
+    top: 200px;  
+    left: 100px; 
+       transform: rotate(0deg);
+        opacity: 1;
   }
-  50%{
-    top:250px;
+
+  60% {
+    top: 320px; 
+    left: 850px;  
+       transform: rotate(0deg);
+        opacity: 1;
   }
-  70%{
-    top:500px;
-    left:800px;
-}
-  
-  100%{
-    top:490px;
+
+  70% {
+    top: 480px;   
+    left: 160px;  
+       transform: rotate(0deg);
+        opacity: 1;
+       
   }
+   100%{top: -100px;  
+    left: 160px;
+    transform: rotate(1080deg);
+     opacity: 0.3;
+   }
 }
